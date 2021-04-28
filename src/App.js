@@ -1,6 +1,15 @@
+/* Importing Essentials */
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+/* Importing components such as Sidebar */
 import Sidebar from './components/Sidebar/Sidebar';
+
+/* Importing components from News */
+import News from './components/News/News';
+import {NewsContextProvider} from './components/News/NewsContext';
+
+/* Importing components from Pages */
 import TopStories from './components/pages/TopStories';
 import ForYou from './components/pages/ForYou';
 import Following from './components/pages/Following';
@@ -14,6 +23,7 @@ import Entertainment from './components/pages/Entertainment';
 import Sports from './components/pages/Sports';
 import Science from './components/pages/Science';
 import Health from './components/pages/Health';
+
 
 const App = () => {
     return(
@@ -36,6 +46,9 @@ const App = () => {
                     <Route path='/science' exact component={Science}/>
                     <Route path='/health' exact component={Health}/>
                 </Switch>
+                <NewsContextProvider>
+                    <News/>
+                </NewsContextProvider>
             </Router>
         </div>
     );
