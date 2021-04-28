@@ -49,6 +49,7 @@ const App = () => {
                 <NewsContextProvider>
                     <News/>
                 </NewsContextProvider>
+                
             </Router>
         </div>
     );
