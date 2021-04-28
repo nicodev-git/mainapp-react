@@ -7,7 +7,7 @@ function News(props) {
     console.log(data);
 
     return (
-        <div>
+        <div className="container-fluid p-4">
             <div className="all-news">
                 {data ? data.articles.map((news) => (<NewsArticle data={news} key={news.url}/>)) : "Loading..."}
             </div>
