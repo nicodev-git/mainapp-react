@@ -18,7 +18,7 @@
 
 .nav-menu {
   background-color: #060b26;
-  width: 250px;
+  width: 200px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,6 +31,8 @@
 .nav-menu.active {
   left: 0;
   transition: 350ms;
+  padding: 0px;
+  width: 200px;
 }
 
 .nav-text {
@@ -62,6 +64,8 @@
 
 .nav-menu-items {
   width: 100%;
+  padding: 0px;
+
 }
 
 .navbar-toggle {
@@ -75,4 +79,8 @@
 
 span {
   margin-left: 16px;
+}
+
+.h1 {
+  color: white;
 }
