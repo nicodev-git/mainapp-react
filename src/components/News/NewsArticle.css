@@ -4,19 +4,15 @@
     box-sizing: border-box;
 }
 
-@media (max-width : 480px)
-{
-  .news-title
-  {
-    font-size: 10pt;
-  }
+@media (max-width : 480px) {
+    .news-title {
+        font-size: 10pt;
+    }
 }
-@media (max-width : 1204px)
-{
-  .news-title
-  {
-    font-size: xx-large;
-  }
+@media (max-width : 1204px) {
+    .news-title{
+        font-size: xx-large;
+    }
 }
 
 body {
