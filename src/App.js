@@ -6,8 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 
 /* Importing components from News */
-import News from './components/News/News';
-import {NewsContextProvider} from './components/News/NewsContext';
+
 
 /* Importing components from Pages */
 import TopStories from './components/pages/TopStories';
@@ -45,11 +44,7 @@ const App = () => {
                     <Route path='/sports' exact component={Sports}/>
                     <Route path='/science' exact component={Science}/>
                     <Route path='/health' exact component={Health}/>
-                </Switch>
-                <NewsContextProvider>
-                    <News/>
-                </NewsContextProvider>
-                
+                </Switch> 
             </Router>
         </div>
     );
