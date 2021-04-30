@@ -16,8 +16,12 @@ export const NewsContextProvider = (props) => {
     }, []);
 
     return(
-        <NewsContext.Provider value={{data}}>
-            {props.children}
-        </NewsContext.Provider>
+        <div className="">
+            <NewsContext.Provider value={{data}}>
+                {props.children}
+            </NewsContext.Provider>
+        </div>
     );
 };
+
+export default NewsContext;
