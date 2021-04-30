@@ -1,9 +1,13 @@
 import React from 'react';
+import News from '../News/News';
+import {NewsContextProvider} from '../News/NewsContext'
 
 function ForYou() {
     return (
         <div className="foryou">
-            <h1>Personal News is displayed here...</h1>
+            <NewsContextProvider>
+                <News/>
+            </NewsContextProvider>
         </div>
     )
 }
