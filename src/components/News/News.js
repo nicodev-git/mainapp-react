@@ -8,9 +8,7 @@ function News(props) {
 
     return (
         <div className="container pl-4">
-            <div className="all-news">
-                {data ? data.articles.map((news) => (<NewsArticle data={news} key={news.url}/>)) : "Loading..."}
-            </div>
+            {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     );
 };
