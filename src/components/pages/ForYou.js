@@ -5,7 +5,7 @@ import {NewsContextProvider} from '../News/NewsContext'
 function ForYou() {
     return (
         <div className="foryou">
-            <NewsContextProvider>
+            <NewsContextProvider query="local">
                 <News/>
             </NewsContextProvider>
         </div>
