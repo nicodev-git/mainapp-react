@@ -1,11 +1,10 @@
-/* Importing Essentials */
+/* Importing React Essentials */
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
+
 /* Importing components such as Sidebar */
 import Sidebar from './components/Sidebar/Sidebar';
-
-/* Importing components from News */
 
 
 /* Importing components from Pages */
@@ -28,22 +27,46 @@ const App = () => {
     return(
         <div>
             <Router>
-                {/* Add Navbar after work */}
                 <Sidebar/>
                 <Switch>
-                    <Route path='/foryou' exact component={ForYou}/>
-                    <Route path='/topstories' exact component={TopStories}/>
-                    <Route path='/following' exact component={Following}/>
-                    <Route path='/savedsearches' exact component={SavedSearch}/>
-                    <Route path='/pakistan' exact component={Pakistan}/>
-                    <Route path='/world' exact component={World}/>
-                    <Route path='/localnews' exact component={LocalNews}/>
-                    <Route path='/business' exact component={Business}/>
-                    <Route path='/technology' exact component={Technology}/>
-                    <Route path='/entertainment' exact component={Entertainment}/>
-                    <Route path='/sports' exact component={Sports}/>
-                    <Route path='/science' exact component={Science}/>
-                    <Route path='/health' exact component={Health}/>
+                    <Route path="/foryou">
+                        <ForYou/>
+                    </Route>
+                    <Route path="/topstories">
+                        <TopStories/>
+                    </Route>
+                    <Route path="/following">
+                        <Following/>
+                    </Route>
+                    <Route path="/savedsearches">
+                        <SavedSearch/>
+                    </Route>
+                    <Route path="/pakistan">
+                        <Pakistan/>
+                    </Route>
+                    <Route path="/world">
+                        <World/>
+                    </Route><Route path="/localnews">
+                        <LocalNews/>
+                    </Route>
+                    <Route path="/business">
+                        <Business/>
+                    </Route>
+                    <Route path="/technology">
+                        <Technology/>
+                    </Route>
+                    <Route path="/entertainment">
+                        <Entertainment/>
+                    </Route>
+                    <Route path="/sports">
+                        <Sports/>
+                    </Route>
+                    <Route path="/science">
+                        <Science/>
+                    </Route>
+                    <Route path="/health">
+                        <Health/>
+                    </Route>
                 </Switch> 
             </Router>
         </div>
