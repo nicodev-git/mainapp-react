@@ -11,7 +11,7 @@ export const NewsContextProvider = (props) => {
     useEffect(() => {
         axios.get
         (
-            "http://127.0.0.1:5000/news"
+            "http://localhost:5000/news"
         ).then(response => setData(response.data["news"]))
         .catch((error) => console.log(error));
     });
