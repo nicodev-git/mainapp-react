@@ -5,9 +5,9 @@ export const NewsContext = createContext();
 
 export const NewsContextProvider = (props) => {
     const [data, setData] = useState();
-    const apiKey = "55ebc220291141b98982efbcffb5aa52";
+    // const apiKey = "55ebc220291141b98982efbcffb5aa52";
     var query = "top-headlines";
-    var param=JSON.stringify({"category":"local"});
+    // var param=JSON.stringify({"category":"local"});
     useEffect(() => {
         axios.get
         (
