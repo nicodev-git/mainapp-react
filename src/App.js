@@ -21,6 +21,7 @@ import Entertainment from './components/pages/Entertainment';
 import Sports from './components/pages/Sports';
 import Science from './components/pages/Science';
 import Health from './components/pages/Health';
+import Home from './components/pages/Home';
 
 
 const App = () => {
@@ -29,6 +30,9 @@ const App = () => {
             <Router>
                 <Sidebar/>
                 <Switch>
+                    <Route path="/">
+                        <Home/>
+                    </Route>
                     <Route path="/foryou">
                         <ForYou/>
                     </Route>
