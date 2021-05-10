@@ -23,6 +23,10 @@ import Science from './components/pages/Science';
 import Health from './components/pages/Health';
 import Home from './components/pages/Home';
 
+/*  Importing components from Auth*/
+import Login from './components/Auth/Login';
+import Signup from './components/Auth/Signup';
+
 
 const App = () => {
     return(
@@ -30,47 +34,22 @@ const App = () => {
             <Router>
                 <Sidebar/>
                 <Switch>
-                    <Route path="/">
-                        <Home/>
-                    </Route>
-                    <Route path="/foryou">
-                        <ForYou/>
-                    </Route>
-                    <Route path="/topstories">
-                        <TopStories/>
-                    </Route>
-                    <Route path="/following">
-                        <Following/>
-                    </Route>
-                    <Route path="/savedsearches">
-                        <SavedSearch/>
-                    </Route>
-                    <Route path="/pakistan">
-                        <Pakistan/>
-                    </Route>
-                    <Route path="/world">
-                        <World/>
-                    </Route><Route path="/localnews">
-                        <LocalNews/>
-                    </Route>
-                    <Route path="/business">
-                        <Business/>
-                    </Route>
-                    <Route path="/technology">
-                        <Technology/>
-                    </Route>
-                    <Route path="/entertainment">
-                        <Entertainment/>
-                    </Route>
-                    <Route path="/sports">
-                        <Sports/>
-                    </Route>
-                    <Route path="/science">
-                        <Science/>
-                    </Route>
-                    <Route path="/health">
-                        <Health/>
-                    </Route>
+                    <Route path='/home' exact component={Home}/>
+                    <Route path='/foryou' exact component={ForYou}/>
+                    <Route path='/topstories' exact component={TopStories}/>
+                    <Route path='/following' exact component={Following}/>
+                    <Route path='/savedsearches' exact component={SavedSearch}/>
+                    <Route path='/pakistan' exact component={Pakistan}/>
+                    <Route path='/world' exact component={World}/>
+                    <Route path='/localnews' exact component={LocalNews}/>
+                    <Route path='/business' exact component={Business}/>
+                    <Route path='/technology' exact component={Technology}/>
+                    <Route path='/entertainment' exact component={Entertainment}/>
+                    <Route path='/sports' exact component={Sports}/>
+                    <Route path='/science' exact component={Science}/>
+                    <Route path='/health' exact component={Health}/>
+                    <Route path='/login' exact component={Login}/>
+                    <Route path='/signup' exact component={Signup}/>
                 </Switch> 
             </Router>
         </div>
