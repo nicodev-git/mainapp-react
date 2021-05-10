@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Link} from 'react-router-dom';
+// import {Switch, Link} from 'react-router-dom';
 import axios from 'axios';
 import './Signup.css';
 
@@ -27,6 +27,7 @@ const Signup = () => {
                                     type="text"
                                     id="inputEmail"
                                     name="email"
+                                    placeholder="Email"
                                     required
                                 />
                                 <input
