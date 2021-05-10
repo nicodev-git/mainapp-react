@@ -1,7 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import axios from 'axios;'
+// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import axios from 'axios';
 import Home from '../pages/Home';
+import './Login.css';
 
 const Login = () => {
     return (
@@ -34,7 +35,7 @@ const Login = () => {
                         />
                     </div>
                     <div className="login">
-                        <a href={`/Home`}>
+                        <a href={<Home/>}>
                             <input className="log-in" type="submit"/>
                         </a>
                     </div>
