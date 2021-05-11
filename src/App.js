@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 /* Importing components such as Sidebar */
 import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/Navbar';
 
 
 /* Importing components from Pages */
@@ -32,7 +33,7 @@ const App = () => {
     return(
         <div>
             <Router>
-                <Sidebar/>
+                <Navbar/>
                 <Switch>
                     <Route path='/home' exact component={Home}/>
                     <Route path='/foryou' exact component={ForYou}/>
