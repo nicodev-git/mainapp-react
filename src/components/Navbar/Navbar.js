@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 // import './Navbar.css';
 
 class Navbar extends Component {
-    state = { clicked: false }
+    // state = { clicked: false }
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+    // handleClick = () => {
+    //     this.setState({ clicked: !this.state.clicked })
+    // }
 
     render() {
         return(
