@@ -36,7 +36,7 @@ const App = () => {
             <Router>
                 <Navbar/>
                 <Switch>
-                    <Route path='/home' exact component={Home}/>
+                    <Route path='/' exact component={Home}/>
                     <Route path='/foryou' exact component={ForYou}/>
                     <Route path='/topstories' exact component={TopStories}/>
                     <Route path='/following' exact component={Following}/>
