@@ -39,14 +39,14 @@ const Login = () => {
                             <input className="log-in" type="submit"/>
                         </a>
                     </div>
-                    {/* <div className="row">
+                    <div className="row">
                         <div className="signup">
-                            <a href="">Sign Up</a>
+                            <a href="/signup">Sign Up</a>
                         </div>
                         <div className="forgotPassword">
                             <a href="#">Forgot Password</a>
                         </div>
-                    </div> */}
+                    </div>
                 </form>
             </div>
         </div>
