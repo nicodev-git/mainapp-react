@@ -13,18 +13,14 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 
-.login-head {
-    font-size: 13px;
-}
-
 .signup-heading {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: red;
+    font-size: 26px;
+    text-decoration: double;
+    color: #4056a1;
+    font-weight: 700;
 }
 
-.enter-email, .enter-name, .enter-pass, .remember-pass {
+.enter-email, .enter-name, .enter-pass, .confirm-pass {
     width: 280px;
     height:50px;
     margin: 5px;
@@ -47,8 +43,8 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .privacy-term {
-    font-size: 9.5px;
-    margin-top: -7px;
+    font-size: 11px;
+    /* margin-top: -7px; */
 }
 
 .signUpButton {
@@ -68,12 +64,23 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .remember {
-    margin-left: 4px;
     font-size: 14px;
-    padding: 0px 50px;
 }
 
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
+}
+
+.signup-box {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 330px;
+    height: 450px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 70px 0 rgb(36 39 44 / 30%);
+    background: #fff;
+    padding: 19px 24px;
+    /* background-color: greenyellow; */
 }
