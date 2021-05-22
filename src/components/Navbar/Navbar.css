@@ -169,9 +169,14 @@
     color: white;
 }
 
-.btn-login{
+.btn-nav-login{
     /* background-color: #203a8f; */
     border-style: solid !important;
     border-width: 1px !important;
     border-color: white !important;
+}
+
+.btn-nav-signup:hover{
+    border-radius: 0.25rem;
+    border-color: white;
 }
