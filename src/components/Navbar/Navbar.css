@@ -1,4 +1,4 @@
-.NavbarItems {
+/* .NavbarItems {
     background: linear-gradient(90deg, rgb(110,94,254), rgba(73,63,252,1) 100%);
     height: 80px;
     display: flex;
@@ -135,4 +135,43 @@
     Button {
         display: none;
     }
+} */
+
+.inp-search{
+    border-width: 1px;
+    border-color: white;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.btn-search{
+    background-color: white;
+    border-width: 1px;
+    border-color: white;
+    border-left-width:0px;
+    height: 38px;
+    border-radius: 0 8px 8px 0;
+}
+
+.bg-primary{
+    background-color: #4056a1 !important;
+}
+
+.btn-secondary{
+    border-color: #4056a1 !important;
+}
+
+.text-light{
+    color: white;
+}
+
+.text-light::placeholder{
+    color: white;
+}
+
+.btn-login{
+    /* background-color: #203a8f; */
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: white !important;
 }
