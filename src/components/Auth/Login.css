@@ -1,28 +1,27 @@
-/* .login-box {
-    margin-top: 450px;
+.login-box {
+    position: absolute;
+    top: 150px;
     width: 100%;
-    height: 100vh;
-    background-color: greenyellow;
-} */
+    height: 400px;
+    /* background-color: greenyellow; */
+}
 
 .login-head {
     color: black;
 }
 
 .login {
-    margin-top: 10px;
     font-size: 26px;
     text-decoration: double;
-    color: #d02f2f;
-    margin-left: 28px;
-    margin-bottom: 30px;
+    color: #4056a1;
     font-weight: 700;
 }
 
 .short-box {
-    position: absolute;
-    top: 100px;
-    left: 350px;
+    /* position: absolute; */
+    /* top:150px; */
+    margin: 0 auto;
+    margin-top: 10px;
     width: 330px;
     height: 360px;
     -webkit-border-radius: 5px;
@@ -32,7 +31,7 @@
     padding: 19px 24px;
 }
 
-.btn {
+/* .btn {
     width: 100%;
     padding: 15px;
     border: none;
@@ -43,22 +42,23 @@
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
     opacity: 1;
-}
+} */
 
-input[type=submit] {
+/* input[type=submit] {
     background-color: #fed250;
     color: black;
     cursor: pointer;
     border-radius: 4px;
+    margin: 0 auto;
 }
 
 input[type=submit]:hover {
     background-color: #fed250;
-}
+} */
 
 .user-email {
     margin: auto;
@@ -68,6 +68,9 @@ input[type=submit]:hover {
     height: 55px;
     border-radius: 4px;
     margin-top: 13px;
+    border-width: 1px !important;
+    /* border-color: black; */
+    
 }
 
 .user-pass {
@@ -77,21 +80,23 @@ input[type=submit]:hover {
     width: 100%;
     height: 55px;
     border-radius: 4px;
+    border-width: 1px !important;
+    /* border-color: black; */
 }
 
-.log-in {
-    margin: auto;
-    padding: 0 50px;
-    margin-top: 15px;
+.btn-login {
+    margin: 0 auto !important;
+    text-align: center;
     width: 100%;
-    height: 50px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.below-login{
+    font-size:small;
 }
 
-.forgot {
-    margin-left: 135px;
-    margin-top: -25px;
-}
-
-.signup {
-    margin-top: 22px;
+.div-btn-login{
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }

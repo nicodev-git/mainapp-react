@@ -9,10 +9,8 @@ const Login = () => {
         <div className="login-box">
             <div className="short-box">
                 <form onSubmit = {(e) => login(e)}>
-                    <div className="row">
-                        <div className="login-head">
-                            <div className="login">Log In to Newsly</div>
-                        </div>
+                    <div className="login-head">
+                        <div className="login text-center">Log In to Newsly</div>
                     </div>
                     <div className="email">
                         <input
@@ -27,24 +25,24 @@ const Login = () => {
                     <div className="password">
                         <input
                             className="user-pass"
-                            type="text"
+                            type="password"
                             name="password"
                             id="inputPassword"
                             placeholder="Password"
                             required
                         />
                     </div>
-                    <div className="login">
+                    <div className="div-btn-login">
                         <a href={<Home/>}>
-                            <input className="log-in" type="submit"/>
+                            <input className="btn btn-login bg-primary text-light" type="submit" value="Log In"/>
                         </a>
                     </div>
-                    <div className="row">
-                        <div className="signup">
-                            <a href="/signup">Sign Up</a>
-                        </div>
+                    <div className="below-login">
                         <div className="forgotPassword">
                             <a href="#">Forgot Password</a>
+                        </div>
+                        <div className="btn-signup">
+                            <a href="/signup">Sign Up</a>
                         </div>
                     </div>
                 </form>
