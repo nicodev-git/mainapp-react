@@ -5,9 +5,9 @@ import NotFound from '../assests/images/CSS-Tricks.png'
 const NotFoundPage = () => {
     return (
         <div>
-            <h1 style={{textAlign:"center"}}>
+            <h1 className="display-4" style={{textAlign:"center"}}>
                 <img className="img-fluid" src={NotFound}/>
-                <Link to='/'>Let's Go Home</Link>
+                <Link to='/'>Go home Kakarot...!</Link>
             </h1>
         </div>
     );
