@@ -29,7 +29,7 @@ const Signup = () => {
                     />
                     <input
                         className="enter-pass"
-                        type="text"
+                        type="password"
                         id="inputPassword"
                         placeholder="Password"
                         name="psd"
