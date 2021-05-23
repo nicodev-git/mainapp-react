@@ -28,6 +28,7 @@ import Urdu from './components/pages/Urdu';
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
+import NotFoundPage from './components/NotFoundPage';
 
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
                     <Route path='/urdu' exact component={Urdu}/>
                     <Route path='/login' exact component={Login}/>
                     <Route path='/signup' exact component={Signup}/>
+                    <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>
         </div>
