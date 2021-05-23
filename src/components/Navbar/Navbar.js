@@ -37,10 +37,10 @@ class Navbar extends Component {
                     </div>
                     <div className="col-5 col-md-4">
                         <a className="float-right" href="/login">
-                            <button type="button" className="btn btn-nav-login text-light p-2 ml-1">Log In</button>
+                            <button type="button" className="btn btn-nav-login text-light p-1 ml-1">Log In</button>
                         </a>
                         <a className="float-right" href="/signup">
-                            <button type="button" className="btn btn-nav-signup text-light p-2">Sign Up</button>
+                            <button type="button" className="btn btn-nav-signup text-light p-1">Sign Up</button>
                         </a>
                     </div>
                 </div>
