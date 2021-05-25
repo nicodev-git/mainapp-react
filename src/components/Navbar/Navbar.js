@@ -1,3 +1,4 @@
+// Importing react essentials and CSS files
 import React, { Component } from 'react';
 // import { MenuItems } from "./MenuItems";
 // import { Button } from "../Button";

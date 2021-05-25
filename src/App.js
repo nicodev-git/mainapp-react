@@ -35,7 +35,9 @@ const App = () => {
     return(
         <div>
             <Router>
+                {/* Added Navbar */}
                 <Navbar/>
+                {/* Adding Routes of all pages */}
                 <Switch>
                     <Route path='/' exact component={Home}/>
                     <Route path='/foryou' exact component={ForYou}/>
