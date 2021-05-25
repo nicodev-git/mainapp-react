@@ -7,7 +7,7 @@ const NotFoundPage = () => {
         <div>
             <h1 className="display-4" style={{textAlign:"center"}}>
                 <img className="img-fluid" src={NotFound}/>
-                <Link to='/'>Go home Kakarot...!</Link>
+                <Link to='/'>Go Return Home</Link>
             </h1>
         </div>
     );
