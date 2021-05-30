@@ -14,7 +14,7 @@ export const NewsContextProvider = (props) => {
             "http://localhost:5000/news"
         ).then(response => setData(response.data["news"]))
         .catch((error) => console.log(error));
-    });
+    },[]);
     console.log(query)
 
     return(
