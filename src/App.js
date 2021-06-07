@@ -24,6 +24,7 @@ import Science from './components/pages/Science';
 import Health from './components/pages/Health';
 import Home from './components/pages/Home';
 import Urdu from './components/pages/Urdu';
+import About from './components/pages/About';
 
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
@@ -56,6 +57,7 @@ const App = () => {
                     <Route path='/urdu' exact component={Urdu}/>
                     <Route path='/login' exact component={Login}/>
                     <Route path='/signup' exact component={Signup}/>
+                    <Route path='/about' exact component={About}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>
