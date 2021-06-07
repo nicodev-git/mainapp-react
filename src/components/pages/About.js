@@ -11,6 +11,7 @@ const About = () => {
             <div className="row">
                 <div className="column">
                     <div className="card">
+                        <img src="" alt="Hussain Shaheen" style={{width:"100%"}}></img>
                         
                     </div>
                 </div>
