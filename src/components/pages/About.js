@@ -36,8 +36,8 @@ const About = () => {
                         <img src="" alt="Uzair Arif" style={{width:"100%"}}></img>
                         <div className="container">
                             <h2>Uzair Arif</h2>
-                            <p className="title">Front-End Web Developer</p>
-                            <p>Areas of Expertise: ReactJS, and so on...</p>
+                            <p className="title">Back-End Developer</p>
+                            <p>Areas of Expertise: FLASK, and so on...</p>
                             <a href="https://github.com/mastprotech/" className="fa fa-github"></a>
                         </div>
                     </div>
