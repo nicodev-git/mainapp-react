@@ -1,4 +1,7 @@
 import React from 'react';
+import Hussain from '../../assests/images/Hussain - Profile Picture.png';
+import Imran from '../../assests/images/Sir Imran Saeed - Profile Picture.jpeg';
+import Uzair from '../../assests/images/Uzair - Profile Picture.jpg'
 import './About.css';
 
 const About = () => {
@@ -12,7 +15,7 @@ const About = () => {
             <div className="row">
                 <div className="column">
                     <div className="card">
-                        <img src="" alt="Hussain Shaheen" style={{width:"100%"}}></img>
+                        <img src={Hussain} alt="Hussain Shaheen" style={{width:"100%"}} className="img-thumbnail"></img>
                         <div className="container">
                             <h2>Hussain Shaheen</h2>
                             <p className="title">Front-End Web Developer</p>
@@ -23,7 +26,7 @@ const About = () => {
                 </div>
                 <div className="column">
                     <div className="card">
-                        <img src="" alt="Sir Muhammad Imran Saeed" style={{width:"100%"}}></img>
+                        <img src={Imran} alt="Sir Muhammad Imran Saeed" style={{width:"100%"}} className="img-thumbnail"></img>
                         <div className="container">
                             <h2>Mr. Muhammad Imran Saeed</h2>
                             <p className="title">Project Supervisor</p>
@@ -33,7 +36,7 @@ const About = () => {
                 </div>
                 <div className="column">
                     <div className="card">
-                        <img src="" alt="Uzair Arif" style={{width:"100%"}}></img>
+                        <img src={Uzair} alt="Uzair Arif" style={{width:"100%"}} className="img-thumbnail"></img>
                         <div className="container">
                             <h2>Uzair Arif</h2>
                             <p className="title">Back-End Developer</p>
