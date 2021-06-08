@@ -12,7 +12,12 @@ const About = () => {
                 <div className="column">
                     <div className="card">
                         <img src="" alt="Hussain Shaheen" style={{width:"100%"}}></img>
-                        
+                        <div className="container">
+                            <h2>Hussain Shaheen</h2>
+                            <p className="title">Something comes here...</p>
+                            <p>Something comes here as well...</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
