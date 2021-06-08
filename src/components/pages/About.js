@@ -43,6 +43,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <div className="footer">
+                <i class="fa fa-copyright" aria-hidden="true"> Newsly 2021</i>
+            </div>
         </div>
     )
 }
