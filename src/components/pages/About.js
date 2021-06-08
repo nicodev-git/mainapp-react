@@ -13,8 +13,8 @@ const About = () => {
             </div>
             <h2 style={{textAlign:"center"}}>Our Team</h2>
             <div className="row">
-                <div className="column">
-                    <div className="card">
+                <div className="column pt-3">
+                    <div className="card pt-3">
                         <img src={Hussain} alt="Hussain Shaheen" style={{width:"100%"}} className="img-thumbnail"></img>
                         <div className="container">
                             <h2>Hussain Shaheen</h2>
@@ -34,7 +34,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column pt-3">
                     <div className="card">
                         <img src={Uzair} alt="Uzair Arif" style={{width:"100%"}} className="img-thumbnail"></img>
                         <div className="container">
