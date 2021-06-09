@@ -76,6 +76,9 @@ class Navbar extends Component {
                         <li className="nav-item">
                             <a className="nav-link" href="/urdu">Urdu News</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/about">About</a>
+                        </li>
                     </ul>
                 </div>
                 
