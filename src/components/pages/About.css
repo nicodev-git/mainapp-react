@@ -1,8 +1,8 @@
-    body {
+    /* body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
-    }
-    
+    } */
+/*     
     html {
         box-sizing: border-box;
     }
@@ -10,13 +10,13 @@
     *, *:before, *:after {
         box-sizing: inherit;
     }
-    
+/*      */
     .column {
         float: left;
-        width: 33.3%;
+        width: 33.3333%;
         margin-bottom: 16px;
         padding: 0 8px;
-    }
+    } */
     
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@
         background-color: #474e5d;
         color: white;
     }
-    
+/*     
     .container {
         padding: 0 16px;
     }
@@ -38,7 +38,7 @@
         content: "";
         clear: both;
         display: table;
-    }
+    } */
     
     .title {
         color: grey;
@@ -56,10 +56,6 @@
         width: 100%;
     }
 
-    .fa-github {
-        font-size: 48px;
-    }
-    
     .button:hover {
         background-color: #555;
     }
@@ -68,9 +64,14 @@
         text-align: center;
     }
     
-    @media screen and (max-width: 650px) {
+    /* @media screen and (max-width: 650px) {
         .column {
         width: 100%;
         display: block;
         }
+    } */
+
+    .fa-github{
+        color: black;
+        font-size: 35px;
     }
