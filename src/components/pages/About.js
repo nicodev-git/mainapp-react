@@ -9,7 +9,7 @@ const About = () => {
         <div className="about">
             <div className="about-section">
                 <h1>About Us!</h1>
-                <p>Just some random text for now...</p>
+                <p>Newsly is an open-source News Aggregator. It's an alternative to Google News, Feedly etc.</p>
             </div>
             <h2 style={{textAlign:"center"}}>Our Team</h2>
             <div className="container-fluid p-5">
