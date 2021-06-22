@@ -41,7 +41,7 @@ const App = () => {
                 {/* Adding Routes of all pages */}
                 <Switch>
                     <Route path='/' exact component={Home}/>
-                    <Route path='/foryou' exact component={ForYou}/>
+                    <Route path='/foryou' exact component={() => <ForYou authorized = {false}/>}/>
                     <Route path='/topstories' exact component={TopStories}/>
                     <Route path='/following' exact component={Following}/>
                     <Route path='/savedsearches' exact component={SavedSearch}/>
