@@ -1,10 +1,11 @@
 import React from 'react';
-// import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 import Home from '../pages/Home';
 import './Login.css';
 
 const Login = () => {
+    let history = useHistory();
     return (
         <div className="login-box">
             <div className="short-box">
@@ -34,7 +35,12 @@ const Login = () => {
                     </div>
                     <div className="div-btn-login">
                         <a href={<Home/>}>
-                            <input className="btn btn-login bg-primary text-light" type="submit" value="Log In"/>
+                            <input 
+                                className="btn btn-login bg-primary text-light" 
+                                type="submit" 
+                                value="Log In"
+                                onClick={() => {history.push("/");}}
+                            />
                         </a>
                     </div>
                     <div className="below-login">
