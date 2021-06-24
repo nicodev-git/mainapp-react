@@ -1,7 +1,14 @@
+/*  Importing React Essentials*/
 import React from 'react';
 import {useHistory} from 'react-router-dom';
+
+/*  Importing Axios*/
 import axios from 'axios';
+
+/*  Importing Home from pages*/
 import Home from '../pages/Home';
+
+/*  Importing Login CSS File*/
 import './Login.css';
 
 const Login = () => {

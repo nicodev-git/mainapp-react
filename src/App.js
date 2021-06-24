@@ -29,6 +29,8 @@ import About from './components/pages/About';
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
+
+/*  Importing component for Not Found Page*/
 import NotFoundPage from './components/NotFoundPage';
 
 
