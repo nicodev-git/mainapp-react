@@ -9,8 +9,17 @@ const Settings = ({authorized}) => {
     }
     else {
         return (
-            <div>
-                <h1>This is the settings page.</h1>
+            <div className="container my-5">
+                <h1>
+                    <span>
+                        <button className="button btn--primary">
+                            {" "}
+                            <span>&lt;</span>
+                            Back {" "}
+                        </button> {" "}
+                        Settings
+                    </span>
+                </h1>
             </div>
         );
     }
