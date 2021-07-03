@@ -1,6 +1,6 @@
 /*  Importing React Essentials*/
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 /*  Importing Axios*/
 import axios from 'axios';

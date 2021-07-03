@@ -25,6 +25,8 @@ import Health from './components/pages/Health';
 import Home from './components/pages/Home';
 import Urdu from './components/pages/Urdu';
 import About from './components/pages/About';
+import Settings from './components/pages/Settings';
+import Preferences from './components/pages/Preferences';
 
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
@@ -60,6 +62,8 @@ const App = () => {
                     <Route path='/login' exact component={Login}/>
                     <Route path='/signup' exact component={Signup}/>
                     <Route path='/about' exact component={About}/>
+                    <Route path='/settings' exact component={Settings}/>
+                    <Route path='/preferences' exact component={Preferences}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>

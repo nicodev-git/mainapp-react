@@ -49,7 +49,7 @@ const About = () => {
                 </div>
             </div>
             <div className="footer">
-            &copy;Newsly 2021
+                Copyright &copy; Newsly 2021 | All Rights Reserved.
             </div>
         </div>
     )
