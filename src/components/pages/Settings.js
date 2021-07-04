@@ -8,13 +8,20 @@ const Settings = () => {
         const value= e.target.value;
         console.log("value", value);
 
-        const returnedItems= [
+        if(value.trim().length===0) {
+            setVisibleOptions(options);
+            return;
+        }
 
-        ]
+        const returnedItems= [];
 
         visibleOptions.forEach((option, index) => {
             const foundOptions=option.values.filter(item => {
-                return item.name.search(value.trim().toLowerCase())!==-1;
+                return (
+                    item.name.toLocaleLowerCase().search(value.trim().toLowerCase())!==-1
+                    ||
+                    item.description.toLocaleLowerCase().search(value.trim().toLowerCase())!==-1
+                );
             });
 
             returnedItems[index] = {
@@ -23,6 +30,15 @@ const Settings = () => {
                 },
                 values: foundOptions,
             };
+
+            if(option.header.name.toLocaleLowerCase().search(value.trim().toLowerCase())!==-1) {
+                returnedItems[index] = {
+                    header: {
+                        name: option.header.name,
+                    },
+                    values: options[index].values,
+                };
+            }
         });
 
         setVisibleOptions(returnedItems)
@@ -110,8 +126,8 @@ const Settings = () => {
                         <span>&lt;</span>
                         Back {" "}
                     </button> {" "}
-                    Settings
                 </span>
+                <h1>Settings</h1>
             </h2>
             <input 
                 className="form-control mt-5" 
