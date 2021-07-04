@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 
 const Settings = () => {
+
+    const onChange = (e) => {
+        e.preventDefault();
+        const value= e.target.value;
+        console.log("value", value);
+
+        const returnedItems= [
+
+        ]
+
+        visibleOptions.forEach((option, index) => {
+            const foundOptions=option.values.filter(item => {
+                return item.name.search(value.trim().toLowerCase())!==-1;
+            });
+
+            returnedItems[index] = {
+                header: {
+                    name: option.header.name,
+                },
+                values: foundOptions,
+            };
+        });
+
+        setVisibleOptions(returnedItems)
+    };
+
+
     const options = [
         {
             header: {
@@ -10,7 +37,8 @@ const Settings = () => {
             values: [
                 {
                     name: "Profile",
-                    description: "Your email address is your identity on this app and is used to log in.",
+                    description: 
+                        "Your email address is your identity on this app and is used to log in.",
                     tags: [
                         "email",
                         "username",
@@ -19,8 +47,23 @@ const Settings = () => {
                         "date of birth",
                     ],
                 },
+                {
+                    name:"Password",
+                    description: "Change your existing password.",
+                    tags: [
+                        "existing password",
+                        "new password",
+                        "confirm new password",
+                    ],
+                },
+                {
+                    name: "Close Account",
+                    description: "Closing your account will be irreversible.",
+                    tags: [],
+                },
             ],
         },
+
         {
             header: {
                 name: "Applications",
@@ -28,19 +71,36 @@ const Settings = () => {
             values: [
                 {
                     name: "Third Party Services",
-                    description: "Grant Truly Expenses access to external accounts for additional functionality.",
-                    tags: [
-
-                    ],
+                    description: 
+                        "Grant Truly Expenses access to external accounts for additional functionality.",
+                    tags: [],
                 },
             ],
         },
+
         {
             header: {
-                
-            }
+                name: "Support",
+            },
+            values: [
+                {
+                    name: "Help",
+                    description: "Having troubles?",
+                    tags: [],
+                },
+                {
+                    name: "FAQ",
+                    description: "View our frequently asked questions,",
+                    tags: [],
+                },
+            ],
         },
     ]
+
+
+    const [visibleOptions, setVisibleOptions] = useState(options);
+
+
     return (
         <div className="container my-5">
             <h2>
@@ -53,7 +113,29 @@ const Settings = () => {
                     Settings
                 </span>
             </h2>
-            <input className="form-control" type="text" placeholder="Search..."/>
+            <input 
+                className="form-control mt-5" 
+                type="text" 
+                placeholder="Search..."
+                onChange= {onChange}
+            />
+            <div>
+                {
+                    visibleOptions.map(option => <div key={option.header.name} className="mt-5 mt-3">
+                        <h3 className="font-weight-bolder">{option.header.name}</h3>
+                        <div>
+                            {option.values.map(value => <div key={value.name}>
+                                <ul className="list-group">
+                                    <li className="list-group-item mb-2">
+                                        <h5 className="font-weight-bold">{value.name}</h5>
+                                        <p>{value.description}</p>
+                                    </li>
+                                </ul>
+                            </div>)}
+                        </div>
+                    </div>)
+                }
+            </div>
         </div>
     );
 };
