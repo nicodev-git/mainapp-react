@@ -22,7 +22,7 @@ const Login = () => {
                     </div>
                     <div className="email">
                         <input
-                            className="user-email"
+                            className="user-email form-control"
                             type="text"
                             id="inputEmail"
                             name="username"
@@ -32,7 +32,7 @@ const Login = () => {
                     </div>
                     <div className="password">
                         <input
-                            className="user-pass"
+                            className="user-pass form-control"
                             type="password"
                             name="password"
                             id="inputPassword"

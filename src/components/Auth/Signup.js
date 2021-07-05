@@ -12,7 +12,7 @@ const Signup = () => {
                         <div className="signup text-center">Sign up to Newsly</div>
                     </div>
                     <input
-                        className="enter-name"
+                        className="enter-name form-control"
                         type="text"
                         id="inputUsername"
                         placeholder="Username"
@@ -20,7 +20,7 @@ const Signup = () => {
                         required
                     />
                     <input
-                        className="enter-email"
+                        className="enter-email form-control"
                         type="text"
                         id="inputEmail"
                         name="email"
@@ -28,7 +28,7 @@ const Signup = () => {
                         required
                     />
                     <input
-                        className="enter-pass"
+                        className="enter-pass form-control"
                         type="password"
                         id="inputPassword"
                         placeholder="Password"
@@ -36,7 +36,7 @@ const Signup = () => {
                         required
                     />
                     <input
-                        className="confirm-pass"
+                        className="confirm-pass form-control"
                         type="password"
                         id="confirmInputPassword"
                         placeholder="Confirm Password"
