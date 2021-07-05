@@ -3,8 +3,8 @@ import { Redirect } from 'react-router-dom';
 
 const Preferences = () => {
     return (
-        <div>
-            <h1>This is the preferences page.</h1>
+        <div className="container">
+            <h1>Hi! Welcome to Newsly, we're glad you're on board with us!</h1>
         </div>
     );
 };
