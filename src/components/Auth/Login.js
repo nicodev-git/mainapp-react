@@ -14,51 +14,53 @@ import './Login.css';
 const Login = () => {
     let history = useHistory();
     return (
-        <div className="login-box">
-            <div className="short-box">
-                <form onSubmit = {(e) => login(e)}>
-                    <div className="login-head">
-                        <div className="login text-center">Log In to Newsly</div>
-                    </div>
-                    <div className="email">
-                        <input
-                            className="user-email"
-                            type="text"
-                            id="inputEmail"
-                            name="username"
-                            placeholder="Email"
-                            required
-                        />
-                    </div>
-                    <div className="password">
-                        <input
-                            className="user-pass"
-                            type="password"
-                            name="password"
-                            id="inputPassword"
-                            placeholder="Password"
-                            required
-                        />
-                    </div>
-                    <div className="div-btn-login">
-                        <a href={<Home/>}>
-                            <input 
-                                className="btn btn-login bg-primary text-light" 
-                                type="submit" 
-                                value="Log In"
-                                onClick={() => {history.push("/");}}
+        <div>
+            <div className="login-box">
+                <div className="short-box">
+                    <form onSubmit = {(e) => login(e)}>
+                        <div className="login-head">
+                            <div className="login text-center">Log In to Newsly</div>
+                        </div>
+                        <div className="email">
+                            <input
+                                className="user-email"
+                                type="text"
+                                id="inputEmail"
+                                name="username"
+                                placeholder="Email"
+                                required
                             />
-                        </a>
-                    </div>
-                    <div className="below-login">
-                        <div className="forgotPassword">
-                            <a href="#">Forgot Password</a>
                         </div>
-                        <div className="btn-signup">
-                            <a href="/signup">Sign Up</a>
+                        <div className="password">
+                            <input
+                                className="user-pass"
+                                type="password"
+                                name="password"
+                                id="inputPassword"
+                                placeholder="Password"
+                                required
+                            />
                         </div>
-                    </div>
-                </form>
+                        <div className="div-btn-login">
+                            <a href={<Home/>}>
+                                <input 
+                                    className="btn btn-login bg-primary text-light" 
+                                    type="submit" 
+                                    value="Log In"
+                                    onClick={() => {history.push("/");}}
+                                />
+                            </a>
+                        </div>
+                        <div className="below-login">
+                            <div className="forgotPassword">
+                                <a href="#">Forgot Password</a>
+                            </div>
+                            <div className="btn-signup">
+                                <a href="/signup">Sign Up</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );
