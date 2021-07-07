@@ -10,6 +10,7 @@ const Footer = () => {
                     <a href="#"><i className="fa fa-instagram"></i></a>
                     <a href="#"><i className="fa fa-twitter"></i></a>
                     <a href="#"><i className="fa fa-linkedin"></i></a>
+                    <a href="#"><i className="fa fa-envelope"></i></a>
                 </div>
                 <ul className="list-inline">
                     <li className="list-inline-item"><a href="/">Newsly</a></li>
