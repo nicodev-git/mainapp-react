@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import Hussain from '../../assests/images/Hussain - Profile Picture.png';
 import Imran from '../../assests/images/Sir Imran Saeed - Profile Picture.jpeg';
 import Uzair from '../../assests/images/Uzair - Profile Picture.jpg'
@@ -50,9 +51,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer">
-                Copyright &copy; Newsly 2021 | All Rights Reserved.
-            </div>
+            <Footer/>
         </div>
     )
 }
