@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const Settings = () => {
 
@@ -152,6 +153,7 @@ const Settings = () => {
                     </div>)
                 }
             </div>
+            <Footer/>
         </div>
     );
 };
