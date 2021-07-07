@@ -22,6 +22,7 @@ const About = () => {
                                 <p className="title">Front-End Web Developer</p>
                                 <p>Areas of Expertise: ReactJS, and so on...</p>
                                 <a href="https://github.com/hussain-shaheen/"><i class="fa fa-github"></i></a>
+                                <a href="mailto:hussain.bscs3696@iiu.edu.pk" className="fa fa-envelope"></a>
                             </div>
                         </div>
                     </div>
@@ -43,6 +44,7 @@ const About = () => {
                                 <p className="title">Back-End Developer</p>
                                 <p>Areas of Expertise: FLASK, and so on...</p>
                                 <a href="https://github.com/mastprotech/" className="fa fa-github"></a>
+                                <a href="mailto:uzair.bscs3701@iiu.edu.pk" className="fa fa-envelope"></a>
                             </div>
                         </div>
                     </div>

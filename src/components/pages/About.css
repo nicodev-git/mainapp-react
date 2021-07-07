@@ -71,7 +71,12 @@
         }
     } */
 
-    .fa-github{
+    .fa-github {
+        color: black;
+        font-size: 35px;
+    }
+
+    .fa-envelope {
         color: black;
         font-size: 35px;
     }
