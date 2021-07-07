@@ -66,7 +66,6 @@ const App = () => {
                     <Route path='/preferences' exact component={Preferences}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
-                <h1>Footer</h1>
             </Router>
         </div>
     );
