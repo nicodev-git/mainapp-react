@@ -8,6 +8,8 @@ import axios from 'axios';
 /*  Importing Home from pages*/
 import Home from '../pages/Home';
 
+import FooterOne from '../Footer/FooterOne';
+
 /*  Importing Login CSS File*/
 import './Login.css';
 
@@ -62,6 +64,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+            <FooterOne/>
         </div>
     );
 };

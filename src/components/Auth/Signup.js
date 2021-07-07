@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Switch, Link} from 'react-router-dom';
 import axios from 'axios';
+import FooterOne from '../Footer/FooterOne';
 import './Signup.css';
 
 const Signup = () => {
@@ -66,6 +67,7 @@ const Signup = () => {
                     </div>
                 </form>
             </div>
+            <FooterOne/>
         </div>            
         // <div className="signup">
         //     <div className="container">
