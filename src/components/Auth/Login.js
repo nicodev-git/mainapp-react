@@ -55,7 +55,7 @@ const Login = () => {
                         </div>
                         <div className="below-login">
                             <div className="forgotPassword">
-                                <a href="#">Forgot Password</a>
+                                <a href="#">Forgot Password?</a>
                             </div>
                             <div className="btn-signup">
                                 <a href="/signup">Sign Up</a>
