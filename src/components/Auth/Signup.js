@@ -22,7 +22,7 @@ const Signup = () => {
                     />
                     <input
                         className="enter-email form-control"
-                        type="text"
+                        type="email"
                         id="inputEmail"
                         name="email"
                         placeholder="Email"
