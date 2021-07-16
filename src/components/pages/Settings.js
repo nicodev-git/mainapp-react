@@ -74,8 +74,8 @@ const Settings = () => {
                     ],
                 },
                 {
-                    name: "Close Account",
-                    description: "Closing your account will be irreversible.",
+                    name: "Delete Account",
+                    description: "Deleting your account will be irreversible.",
                     tags: [],
                 },
             ],
@@ -146,6 +146,7 @@ const Settings = () => {
                                     <li className="list-group-item mb-2">
                                         <h5 className="font-weight-bold">{value.name}</h5>
                                         <p>{value.description}</p>
+                                        {/* <p>{value.tags}</p> */}
                                     </li>
                                 </ul>
                             </div>)}
