@@ -1,5 +1,7 @@
 /*  Importing React Essentials*/
 import React from 'react';
+
+/*  Importing useHistory hook*/
 import { useHistory } from 'react-router-dom';
 
 /*  Importing Axios*/
@@ -8,10 +10,14 @@ import axios from 'axios';
 /*  Importing Home from pages*/
 import Home from '../pages/Home';
 
-// import FooterOne from '../Footer/FooterOne';
+/*  Importing Footer*/
+import FooterOne from '../Footer/FooterOne';
 
 /*  Importing Login CSS File*/
 import './Login.css';
+
+/*  Importing Google OAuth*/
+import GoogleAuth from './GoogleAuth';
 
 const Login = () => {
     let history = useHistory();
@@ -62,9 +68,10 @@ const Login = () => {
                             </div>
                         </div>
                     </form>
+                    <GoogleAuth/>
                 </div>
             </div>
-            {/* <FooterOne/> */}
+            <FooterOne/>
         </div>
     );
 };

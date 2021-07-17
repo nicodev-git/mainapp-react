@@ -1,8 +1,19 @@
+// Importing react essentials
 import React from 'react';
+
 // import {Switch, Link} from 'react-router-dom';
+
+// Importing axios
 import axios from 'axios';
-// import FooterOne from '../Footer/FooterOne';
+
+// Importing Footer
+import FooterOne from '../Footer/FooterOne';
+
+//Importing CSS for Sign Up
 import './Signup.css';
+
+//Importing Google OAuth
+import GoogleAuth from './GoogleAuth';
 
 const Signup = () => {
     return (
@@ -65,9 +76,13 @@ const Signup = () => {
                             <input className="btn btn-signup bg-primary text-light" type="submit" value="Sign Up"/>
                         </a>
                     </div>
+                    <p>Already have an account?</p>
+                    <a href='/login'>Log In</a>
+                    <p>OR</p>
+                    <GoogleAuth/>
                 </form>
             </div>
-            {/* <FooterOne/> */}
+            <FooterOne/>
         </div>            
         // <div className="signup">
         //     <div className="container">
@@ -150,7 +165,7 @@ function signup(e) {
         password : document.getElementById("inputPassword").value,
         confirmPassword : document.getElementById("confirmInputPassword").value
     };
-    axios.post("http://localhost:5000/user", request).then((response) => {
+    axios.post("http://localhost:5000/user/new", request).then((response) => {
         alert(response.data.message);
     }).catch((err) => {
         console.log(err);
