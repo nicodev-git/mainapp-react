@@ -10,7 +10,7 @@ function ForYou({authorized}) {
     }
     else {
         return (
-            <div className="foryou">
+            <div className="foryou container">
                 <h1>Personal Feeds are being displayed here...</h1>
             </div>
         )
