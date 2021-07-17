@@ -17,10 +17,10 @@ import Pakistan from './components/pages/Pakistan';
 import World from './components/pages/World';
 import LocalNews from './components/pages/LocalNews';
 import Business from './components/pages/Business';
-import Technology from './components/pages/Technology';
+import SciTech from './components/pages/SciTech';
 import Entertainment from './components/pages/Entertainment';
 import Sports from './components/pages/Sports';
-import Science from './components/pages/Science';
+// import Science from './components/pages/Science';
 import Health from './components/pages/Health';
 import Home from './components/pages/Home';
 import Urdu from './components/pages/Urdu';
@@ -53,10 +53,10 @@ const App = () => {
                     <Route path='/world' exact component={World}/>
                     <Route path='/localnews' exact component={LocalNews}/>
                     <Route path='/business' exact component={Business}/>
-                    <Route path='/technology' exact component={Technology}/>
+                    <Route path='/sci-tech' exact component={SciTech}/>
                     <Route path='/entertainment' exact component={Entertainment}/>
                     <Route path='/sports' exact component={Sports}/>
-                    <Route path='/science' exact component={Science}/>
+                    {/* <Route path='/science' exact component={Science}/> */}
                     <Route path='/health' exact component={Health}/>
                     <Route path='/urdu' exact component={Urdu}/>
                     <Route path='/login' exact component={Login}/>
