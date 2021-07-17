@@ -12,7 +12,7 @@ function Sports() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="sports">
+        <div className="sports container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )

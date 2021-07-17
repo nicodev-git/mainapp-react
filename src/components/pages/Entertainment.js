@@ -12,7 +12,7 @@ function Entertainment() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="entertainment">
+        <div className="entertainment container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )

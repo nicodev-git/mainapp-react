@@ -12,7 +12,7 @@ function Business() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="business">
+        <div className="business container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )

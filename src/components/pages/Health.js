@@ -12,7 +12,7 @@ function Health() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="health">
+        <div className="health container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )

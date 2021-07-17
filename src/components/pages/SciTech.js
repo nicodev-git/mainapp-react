@@ -12,7 +12,7 @@ function SciTech() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="sci-tech">
+        <div className="sci-tech container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )
