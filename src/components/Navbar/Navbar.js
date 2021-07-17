@@ -51,9 +51,9 @@ class Navbar extends Component {
                             <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">News</a>
                             <div className="dropdown-menu">
                                 <a className="dropdown-item" href="/business">Business</a>
-                                <a className="dropdown-item" href="/technology">Technology</a>
+                                <a className="dropdown-item" href="/sci-tech">Sci/Tech</a>
+                                <a className="dropdown-item" href="/entertainment">Entertainment</a>
                                 <a className="dropdown-item" href="/sports">Sports</a>
-                                <a className="dropdown-item" href="/science">Science</a>
                                 <a className="dropdown-item" href="/health">Health</a>
                             </div>
                         </li>
