@@ -20,7 +20,6 @@ import Business from './components/pages/Business';
 import SciTech from './components/pages/SciTech';
 import Entertainment from './components/pages/Entertainment';
 import Sports from './components/pages/Sports';
-// import Science from './components/pages/Science';
 import Health from './components/pages/Health';
 import Home from './components/pages/Home';
 import Urdu from './components/pages/Urdu';
@@ -56,7 +55,6 @@ const App = () => {
                     <Route path='/sci-tech' exact component={SciTech}/>
                     <Route path='/entertainment' exact component={Entertainment}/>
                     <Route path='/sports' exact component={Sports}/>
-                    {/* <Route path='/science' exact component={Science}/> */}
                     <Route path='/health' exact component={Health}/>
                     <Route path='/urdu' exact component={Urdu}/>
                     <Route path='/login' exact component={Login}/>
