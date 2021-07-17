@@ -12,7 +12,7 @@ function Pakistan() {
             .catch((error)=>console.log(error));
         }, []);
     return (
-        <div className="pakistan">
+        <div className="pakistan container">
             {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "Loading..."}
         </div>
     )
