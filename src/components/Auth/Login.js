@@ -1,5 +1,8 @@
 /*  Importing React Essentials*/
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+
+/*  Importing useCookies hook*/
+import { useCookies } from 'react-cookie';
 
 /*  Importing useHistory hook*/
 import { useHistory, Redirect} from 'react-router-dom';
@@ -19,8 +22,6 @@ import './Login.css';
 /*  Importing Google OAuth*/
 import GoogleAuth from './GoogleAuth';
 
-import { useCookies } from 'react-cookie';
-
 const Login = () => {
     /*//////////////////////////////
     NOTE: I did NOT implement jwt-login, do it yourself.
@@ -30,46 +31,72 @@ const Login = () => {
     3. Use Redirect so that Redirect will execute instead of return ('normal HTML code') like used in this file.
     4. Any query, ask me.
     ////////////////////////////////*/
+    const [username, setUsername]=useState('');
+    const [password, setPassword]=useState('');
     const [cookies, setCookie]=useCookies(['GoogleAuth', 'x-access-token'])
 
     let history = useHistory();
+
+    const submit = async(e) => {
+        e.preventDefault();
+        let request={
+            "username":username,
+            "password":password
+        }
+        console.log("hello"+request);
+        axios.post('http://localhost:5000/login', request).then((response) => {
+            console.log(request);
+            console.log(response);
+            console.log(response.data["token"]);
+            setCookie('x-access-token', response.data["token"], {path:"/"});
+            console.log("From Cookie:");
+            console.log({'x-access-token':cookies['token']});
+            
+            // alert(response.data.message);
+        }).catch((err) => {
+            console.log('Error');
+        });
+    }
+
     if(cookies["GoogleAuth"]===undefined && cookies["x-access-token"]===undefined){
         return (
             <div>
                 <div className="login-box">
                     <div className="short-box">
-                        <form onSubmit = {(e) => login(e)}>
+                        <form onSubmit={submit}>
                             <div className="login-head">
                                 <div className="login text-center">Log In to Newsly</div>
                             </div>
                             <div className="email">
                                 <input
-                                    className="user-email"
-                                    type="email"
-                                    id="inputEmail"
+                                    className="username form-control"
+                                    type="text"
+                                    id="floatinginput"
                                     name="username"
-                                    placeholder="Email"
+                                    placeholder="Username"
+                                    onChange={e => setUsername(e.target.value)}
                                     required
                                 />
                             </div>
                             <div className="password">
                                 <input
-                                    className="user-pass"
+                                    className="user-pass form-control"
                                     type="password"
                                     name="password"
                                     id="inputPassword"
                                     placeholder="Password"
+                                    onChange={e => setPassword(e.target.value)}
                                     required
                                 />
                             </div>
                             <div className="div-btn-login">
-                                <a href={<Home/>}>
+                                <a href="#">
                                     <input 
                                         className="btn btn-login bg-primary text-light" 
                                         type="submit" 
                                         value="Log In"
-                                        onClick={() => {history.push("/");}}
-                                    />
+                                        // onClick={() => {history.push("/");}}
+                                        />
                                 </a>
                             </div>
                             <div className="below-login">
@@ -92,21 +119,21 @@ const Login = () => {
     }
 };
 
-function login(e) {
-    debugger;
-    e.preventDefault();
-    let request = {
-        email : document.getElementById("inputEmail"),
-        password : document.getElementById("inputPassword")
-    };
+// function login(e) {
+//     debugger;
+//     e.preventDefault();
+//     let request = {
+//         email : document.getElementById("inputEmail"),
+//         password : document.getElementById("inputPassword")
+//     };
 
-    axios.post("http://localhost:5000/login", request).then(
-        response => {
-            alert(response.data.message);
-        }
-    ).catch(err => {
-        console.log(err);
-    })
-};
+//     axios.post("http://localhost:5000/login", request).then(
+//         response => {
+//             alert(response.data.message);
+//         }
+//     ).catch(err => {
+//         console.log(err);
+//     })
+// };
 
 export default Login;

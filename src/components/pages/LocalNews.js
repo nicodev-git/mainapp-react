@@ -2,7 +2,7 @@ import React from 'react';
 
 function LocalNews() {
     return (
-        <div className="localnews">
+        <div className="localnews container">
             <h1>Local News are displayed here...</h1>
         </div>
     )
