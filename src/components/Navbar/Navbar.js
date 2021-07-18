@@ -1,5 +1,5 @@
 // Importing react essentials and CSS files
-import React, { Component } from 'react';
+import React from 'react';
 import {useCookies} from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 
@@ -20,7 +20,6 @@ const Navbar=(props)=>{
     const logout=async()=>{
         removeCookie("x-access-token");
         removeCookie("GoogleAuth");
-        return(<Redirect to="/settings"/>);
     }
 
     let menu;
