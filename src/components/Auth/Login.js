@@ -101,14 +101,16 @@ const Login = () => {
                             </div>
                             <div className="below-login">
                                 <div className="forgotPassword">
-                                    <a href="#">Forgot Password?</a>
+                                    <a className="text-primary" href="#">Forgot Password?</a>
                                 </div>
                                 <div className="btn-signup">
-                                    <a href="/signup">Sign Up</a>
+                                    <a className="text-primary" href="/signup">Sign Up</a>
                                 </div>
                             </div>
                         </form>
-                        <GoogleAuth/>
+                        <div className="google-auth">
+                            <GoogleAuth/>
+                        </div>
                     </div>
                 </div>
                 <FooterOne/>

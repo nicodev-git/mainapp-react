@@ -1,7 +1,7 @@
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 15px;
-    margin: 5px 0 12px 0;
+    margin: 5px 0 5px 0;
     display: inline-block;
     border: none;
     cursor: pointer;
@@ -74,13 +74,26 @@ hr {
 
 .signup-box {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 330px;
-    height: 450px;
+    height: 580px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     box-shadow: 0 0 70px 0 rgb(36 39 44 / 30%);
     background: #fff;
     padding: 19px 24px;
     /* background-color: greenyellow; */
+}
+
+.login-offer{
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.text-primary{
+    color: #4056a1 !important;
+}
+
+.text-primary:hover{
+    color: #2f4aa3 !important;
 }

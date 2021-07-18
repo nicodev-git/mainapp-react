@@ -68,7 +68,7 @@ const Signup = () => {
                     <div className="privacy-term">
                         <p>
                             By creating an account, you therefore agree with our 
-                            <a href="#"> Terms and Conditions</a>.
+                            <a className="text-primary" href="#"> Terms and Conditions</a>.
                         </p>
                     </div>
                     <div className="div-btn-login">
@@ -76,10 +76,13 @@ const Signup = () => {
                             <input className="btn btn-signup bg-primary text-light" type="submit" value="Sign Up"/>
                         </a>
                     </div>
-                    <p>Already have an account?</p>
-                    <a href='/login'>Log In</a>
-                    <p>OR</p>
-                    <GoogleAuth/>
+                    <div className="login-offer">
+                        <p>Already have an account? <a className="text-primary" href='/login'>Log In</a></p>
+                    </div>
+                    <div className="google-auth">
+                        <p>OR</p>
+                        <GoogleAuth/>
+                    </div>
                 </form>
             </div>
             <FooterOne/>

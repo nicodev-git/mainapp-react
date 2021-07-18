@@ -73,7 +73,7 @@ const Navbar=(props)=>{
                 {menu}
             </div>
             <div>
-                <ul className="nav nav-pills justify-content-center">
+                <ul className="nav nav-pills justify-content-center nav-categories">
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">News</a>
                         <div className="dropdown-menu">
