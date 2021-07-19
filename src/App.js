@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 /* Importing components such as Sidebar */
 // import Sidebar from './components/Sidebar/Sidebar';
+
+/*  Importing Navbar from components*/
 import Navbar from './components/Navbar/Navbar';
 
 
@@ -31,7 +33,7 @@ import Preferences from './components/pages/Preferences';
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
 
-/*  Importing component for Not Found Page*/
+/*  Importing component for Not Found Page component*/
 import NotFoundPage from './components/NotFoundPage';
 
 
