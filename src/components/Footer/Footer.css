@@ -4,6 +4,15 @@
     color: #4b4c4d;
 }
 
+footer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 7vh;
+    background-color: #ffffff;
+    color: #4b4c4d;
+    text-align: center;
+}
+
 .footer ul {
     padding: 0;
     list-style: none;
@@ -35,7 +44,7 @@
 .footer .social > a {
     font-size: 24px;
     width: 40px;
-    height: 40px;
+    height: 20px;
     line-height: 40px;
     display: inline-block;
     text-align: center;

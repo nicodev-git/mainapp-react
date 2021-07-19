@@ -1,17 +1,13 @@
 import React from 'react';
 import News from '../News/News';
-import {NewsContextProvider} from '../News/NewsContext';
+// import {NewsContextProvider} from '../News/NewsContext';
 
 const Home = () => {
         return (
             <div className="home">
-                <NewsContextProvider>
-                    <News/>
-                </NewsContextProvider>
+                <News/>
             </div>
         )
     }
-    
-
 
 export default Home;

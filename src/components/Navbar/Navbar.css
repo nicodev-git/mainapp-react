@@ -180,3 +180,13 @@
     border-radius: 0.25rem;
     border-color: white;
 }
+
+.dropdown .nav-link:hover, .nav-item .nav-link{
+    /* color: #4056a1 !important; */
+}
+
+@media ( max-width: 480px) {
+    .navbar-logo h1{
+        font-size: 30px;
+    }
+}
