@@ -17,6 +17,8 @@ function NewsArticle({ news }) {
                             <span className="news-published">{news.published_date}</span>
                             <span className="news-source">{news.source}</span>
                         </p>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
