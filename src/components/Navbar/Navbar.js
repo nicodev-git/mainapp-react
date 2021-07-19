@@ -3,28 +3,32 @@ import React from 'react';
 import {useCookies} from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 
-// import { MenuItems } from "./MenuItems";
-// import { Button } from "../Button";
+// Importing axios
+import axios from 'axios';
 
 // Importing Navbar CSS File
 import './Navbar.css';
 
+import SearchBar from '../Search Bar/SearchBar';
 
-const Navbar=(props)=>{
+import News from '../News/News';
+
+
+const Navbar = () => {
+    // state = {news: []};
+    // onSearchSubmit = async (query) => {
+    //     const response = await axios.get('http://localhost:5000/news/search')
+    // };
     const [cookies, setCookie, removeCookie]=useCookies(['GoogleAuth', 'x-access-token']);
-    // state = { clicked: false }
-
-    // handleClick = () => {
-    //     this.setState({ clicked: !this.state.clicked })
-    // }
-    const logout=async()=>{
+    
+    const logout = async () => {
         removeCookie("x-access-token");
         removeCookie("GoogleAuth");
     }
 
     let menu;
-    if(cookies["GoogleAuth"]===undefined && cookies["x-access-token"]===undefined){
-        menu=(
+    if(cookies["GoogleAuth"]===undefined && cookies["x-access-token"]===undefined) {
+        menu = (
             <div className="col-5 col-md-4">
                 <a className="float-right" href="/login">
                     <button type="button" className="btn btn-nav-login text-light p-1 ml-1">Log In</button>
@@ -35,7 +39,7 @@ const Navbar=(props)=>{
             </div>
         )
     } else {
-        menu=(
+        menu = (
             <div className="col-5 col-md-4">
                 <a className="float-right" href="/settings">
                     <button type="button" className="btn btn-nav-login text-light p-1 ml-1">Account</button>
@@ -46,7 +50,7 @@ const Navbar=(props)=>{
             </div>
         )
     }
-    return(
+    return (
         <nav>
             <div className="navbar navbar-expand-lg navbar-light bg-primary">
                 <div className="col-4">
@@ -58,7 +62,8 @@ const Navbar=(props)=>{
                     </button> */}
                 </div>
                 <div className="col-3 col-md-4" action="/action_page.php">
-                    <form className="input-group my-2 my-lg-2">
+                    <SearchBar/>
+                    {/* <form className="input-group my-2 my-lg-2">
                         <input
                             className="form-control inp-search bg-primary text-light" 
                             type="search" 
@@ -67,8 +72,11 @@ const Navbar=(props)=>{
                         />
                         <button
                             className="btn btn-search bg-primary text-light p-1"
-                            type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                            type="submit"
+                        >
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form> */}
                 </div>
                 {menu}
             </div>
