@@ -5,7 +5,8 @@ import NewsArticle from "./../News/NewsArticle.js";
 function Entertainment() {
     const [data, setData]=useState();
 
-    useEffect(()=>{
+    useEffect( () => {
+        document.title = "Entertainment - Newsly"
         axios.get(
             "http://localhost:5000/news", {headers:{"Category":"entertainment"}})
             .then(response=>setData(response.data["news"]))

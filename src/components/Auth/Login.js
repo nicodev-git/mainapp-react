@@ -1,5 +1,5 @@
 /*  Importing React Essentials*/
-import React, { useState } from 'react';
+import React, { useEffect ,useState } from 'react';
 
 /*  Importing useCookies hook*/
 import { useCookies } from 'react-cookie';
@@ -23,6 +23,10 @@ import './Login.css';
 import GoogleAuth from './GoogleAuth';
 
 const Login = () => {
+    useEffect(() => {
+        document.title = "Login - Newsly"
+    }, []);
+
     /*//////////////////////////////
     NOTE: I did NOT implement jwt-login, do it yourself.
     This file contains necessary things to use Redirect. Redirect won't work until you use it correctly.
@@ -31,6 +35,7 @@ const Login = () => {
     3. Use Redirect so that Redirect will execute instead of return ('normal HTML code') like used in this file.
     4. Any query, ask me.
     ////////////////////////////////*/
+    
     const [username, setUsername]=useState('');
     const [password, setPassword]=useState('');
     const [cookies, setCookie]=useCookies(['GoogleAuth', 'x-access-token'])

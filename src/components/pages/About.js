@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../Footer/Footer';
 import Hussain from '../../assests/images/Hussain - Profile Picture.png';
 import Imran from '../../assests/images/Sir Imran Saeed - Profile Picture.jpeg';
@@ -6,6 +6,10 @@ import Uzair from '../../assests/images/Uzair - Profile Picture.jpg'
 import './About.css';
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About - Newsly"
+    }, []);
+
     return (
         <div className="about">
             <div className="about-section">

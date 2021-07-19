@@ -1,5 +1,5 @@
 // Importing react essentials
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // import {Switch, Link} from 'react-router-dom';
 
@@ -16,6 +16,10 @@ import './Signup.css';
 import GoogleAuth from './GoogleAuth';
 
 const Signup = () => {
+    useEffect(() => {
+        document.title = "Sign Up - Newsly"
+    }, []);
+
     return (
         <div>
             <div className="signup-box">

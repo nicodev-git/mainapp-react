@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
 const Settings = () => {
+    useEffect(() => {
+        document.title = "Settings - Newsly"
+    }, []);
 
     const onChange = (e) => {
         e.preventDefault();
