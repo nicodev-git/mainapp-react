@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 /*  Importing useCookies hook*/
 import { useCookies } from 'react-cookie';
 
-/*  Importing useHistory hook*/
+/*  Importing useHistory hook and Redirect*/
 import { useHistory, Redirect} from 'react-router-dom';
 
 /*  Importing Axios*/
@@ -39,7 +39,7 @@ const Login = () => {
 
     const submit = async(e) => {
         e.preventDefault();
-        let request={
+        let request = {
             "username":username,
             "password":password
         }
@@ -58,7 +58,7 @@ const Login = () => {
         });
     }
 
-    if(cookies["GoogleAuth"]===undefined && cookies["x-access-token"]===undefined){
+    if(cookies["GoogleAuth"]===undefined && cookies["x-access-token"]===undefined) {
         return (
             <div>
                 <div className="login-box">

@@ -20,7 +20,7 @@ const Navbar=(props)=>{
     const logout=async()=>{
         removeCookie("x-access-token");
         removeCookie("GoogleAuth");
-        return(<Redirect to="/settings"/>);
+        // return(<Redirect to="/settings"/>);
     }
 
     let menu;
