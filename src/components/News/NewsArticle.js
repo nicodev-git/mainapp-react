@@ -10,7 +10,9 @@ function NewsArticle({ news }) {
                     <p className="mb-0">
                         <span className="source">{news.source}</span>
                         <span className="news-category"> | {news.category}</span>
-                        <span className="published-date float-right">{published_date.toLocaleString('en-US', {weekday: "short", year: "numeric", month:"short", day:"2-digit", hour12:true, hour:"2-digit", minute:"2-digit" })}</span>
+                        <span className="published-date float-right">
+                            {published_date.toLocaleString('en-US', {weekday: "short", year: "numeric", month:"short", day:"2-digit", hour12:true, hour:"2-digit", minute:"2-digit" })}
+                        </span>
                     </p>
                     <hr className="news-body-divider"/>
                 </div>
