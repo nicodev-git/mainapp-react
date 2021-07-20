@@ -6,23 +6,22 @@ class SearchBar extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            query:""
+            query:"",
+            redirect:false
         };
     }
-    
-
-    // onInputChange = event => {
-    //     this.setState({query: event.target.value},
-    // };
 
     onFormSubmit = (e) => {
-        e.preventDefault();
         let fullPath="/search/?"+new URLSearchParams({query:this.state.query}).toString();
+        this.setState({query:fullPath, redirect:true});
         console.log("Full URL: "+fullPath);
-        <Link to={fullPath}/>
     };
 
     render() {
+        if(this.state.redirect){
+            this.setState({redirect:false})
+            return(<Redirect to={this.state.query}/>);
+        }
         return(
             <form className="input-group my-2 my-lg-2" onSubmit = {this.onFormSubmit}>
                 <input
