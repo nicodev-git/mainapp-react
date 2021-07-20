@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, Redirect } from 'react-router-dom';
 import './SearchBar.css';
 
 class SearchBar extends React.Component {
-    state = {query: ''};
+    constructor(props){
+        super(props);
+        this.state={
+            query:""
+        };
+    }
+    
 
     // onInputChange = event => {
     //     this.setState({query: event.target.value},
     // };
 
-    onFormSubmit = event => {
-        event.preventDefault();
-        this.props.onFormSubmit(this.state.query);
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        let fullPath="/search/?"+new URLSearchParams({query:this.state.query}).toString();
+        console.log("Full URL: "+fullPath);
+        <Link to={fullPath}/>
     };
 
     render() {
@@ -21,8 +30,7 @@ class SearchBar extends React.Component {
                     type="search" 
                     placeholder="Search..."
                     aria-label="Search"
-                    value={this.state.query}
-                    onChange={e => this.setState({query: e.target.value})}
+                    onChange={(e)=>{this.setState({query:e.target.value})}}
                 />
                 <button
                     className="btn btn-search bg-primary text-light p-1"
@@ -32,7 +40,7 @@ class SearchBar extends React.Component {
                 </button>
             </form>
         );
-    };
+    }
 };
 
 export default SearchBar;
