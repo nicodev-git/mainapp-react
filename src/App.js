@@ -65,7 +65,7 @@ const App = () => {
                     <Route path='/about' exact component={About}/>
                     <Route path='/settings' exact component={Settings}/>
                     <Route path='/preferences' exact component={Preferences}/>
-                    <Route path='/search' exact component={Search}/>
+                    <Route path='/search/:query?' exact component={Search}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>
