@@ -28,6 +28,7 @@ import Urdu from './components/pages/Urdu';
 import About from './components/pages/About';
 import Settings from './components/pages/Settings';
 import Preferences from './components/pages/Preferences';
+import Search from './components/Search Bar/Search';
 
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
@@ -64,6 +65,7 @@ const App = () => {
                     <Route path='/about' exact component={About}/>
                     <Route path='/settings' exact component={Settings}/>
                     <Route path='/preferences' exact component={Preferences}/>
+                    <Route path='/search' exact component={Search}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>
