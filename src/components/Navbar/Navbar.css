@@ -181,9 +181,9 @@
     border-color: white;
 }
 
-.dropdown .nav-link:hover, .nav-item .nav-link{
-    /* color: #4056a1 !important; */
-}
+/* .dropdown .nav-link:hover, .nav-item .nav-link{
+    color: #4056a1 !important;
+} */
 
 @media ( max-width: 480px) {
     .navbar-logo h1{
