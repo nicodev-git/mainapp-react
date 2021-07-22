@@ -21,7 +21,7 @@ function Search(props){
     
     return(
         <div className="search">
-           <div className="container">
+            <div className="container">
                 {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : ""}
             </div>
 
