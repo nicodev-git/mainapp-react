@@ -63,20 +63,6 @@ const Navbar = () => {
                 </div>
                 <div className="col-3 col-md-4" action="/action_page.php">
                     <SearchBar/>
-                    {/* <form className="input-group my-2 my-lg-2">
-                        <input
-                            className="form-control inp-search bg-primary text-light" 
-                            type="search" 
-                            placeholder="Search..."
-                            aria-label="Search"
-                        />
-                        <button
-                            className="btn btn-search bg-primary text-light p-1"
-                            type="submit"
-                        >
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </form> */}
                 </div>
                 {menu}
             </div>
