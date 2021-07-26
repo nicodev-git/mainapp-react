@@ -65,3 +65,20 @@ footer {
     color: #aaa;
     margin-bottom: 0;
 }
+
+.border-danger{
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.border-danger p{
+    margin-bottom: 0px;
+}
+
+.account .card input{
+    margin: 5px;
+}
+.del-account{
+    width:200px;
+}

@@ -29,6 +29,8 @@ import About from './components/pages/About';
 import Settings from './components/pages/Settings';
 import Preferences from './components/pages/Preferences';
 import Search from './components/Search Bar/Search';
+import Settings2 from './components/pages/Settings2';
+import Logout from './components/pages/Logout';
 
 /*  Importing components from Auth*/
 import Login from './components/Auth/Login';
@@ -36,7 +38,6 @@ import Signup from './components/Auth/Signup';
 
 /*  Importing component for Not Found Page component*/
 import NotFoundPage from './components/NotFoundPage';
-
 
 const App = () => {
     return(
@@ -66,6 +67,8 @@ const App = () => {
                     <Route path='/settings' exact component={Settings}/>
                     <Route path='/preferences' exact component={Preferences}/>
                     <Route path='/search/:query?' exact component={Search}/>
+                    <Route path='/settings2' exact component={Settings2}/>
+                    <Route path='/logout' exact component={Logout}/>
                     <Route path='*' exact component={NotFoundPage}/>
                 </Switch> 
             </Router>

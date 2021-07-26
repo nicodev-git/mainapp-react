@@ -44,8 +44,8 @@ const Navbar = () => {
                 <a className="float-right" href="/settings">
                     <button type="button" className="btn btn-nav-login text-light p-1 ml-1">Account</button>
                 </a>
-                <a className="float-right" href="#">
-                    <button type="button" className="btn btn-nav-signup text-light p-1" onClick={logout}>Logout</button>
+                <a className="float-right" href="/logout">
+                    <button type="button" className="btn btn-nav-signup text-light p-1">Logout</button>
                 </a>
             </div>
         )
