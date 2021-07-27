@@ -18,6 +18,7 @@ function Search(props){
             .then(response=>setData(response.data["news"]))
             .catch((error)=>console.log(error));
     }, [queryParams.get("query"), query]);
+    
     if(data===undefined || data.length===0){
         return(
             <div className="search">
