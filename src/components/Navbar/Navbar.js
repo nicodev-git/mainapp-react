@@ -47,7 +47,7 @@ const Navbar = () => {
                 <a className="float-right" href="/logout">
                     <button type="button" className="btn btn-nav-signup text-light p-1">Logout</button>
                 </a> */}
-                <ul className="navbar-nav mr-auto">
+                <ul className="navbar-nav mr-4 float-right pr-5">
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">User</a>
                         <div className="dropdown-menu">
