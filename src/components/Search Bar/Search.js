@@ -18,15 +18,24 @@ function Search(props){
             .then(response=>setData(response.data["news"]))
             .catch((error)=>console.log(error));
     }, [queryParams.get("query"), query]);
-    
-    return(
-        <div className="search">
-            <div className="container">
-                {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : ""}
+    if(data===undefined || data.length===0){
+        return(
+            <div className="search">
+                <div className="container">
+                    No result found
+                </div>
             </div>
+        );
+    } else {
+        return(
+            <div className="search">
+                <div className="container">
+                    {data ? data.map((data) => (<NewsArticle news={data} key={data.url}/>)) : "No helloresult found"}
+                </div>
 
-        </div>
-    )
+            </div>
+        );
+    }
 }
 
 export default Search;
