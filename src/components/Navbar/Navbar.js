@@ -41,12 +41,44 @@ const Navbar = () => {
     } else {
         menu = (
             <div className="col-5 col-md-4">
-                <a className="float-right" href="/settings">
+                {/* <a className="float-right" href="/settings">
                     <button type="button" className="btn btn-nav-login text-light p-1 ml-1">Account</button>
                 </a>
                 <a className="float-right" href="/logout">
                     <button type="button" className="btn btn-nav-signup text-light p-1">Logout</button>
-                </a>
+                </a> */}
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">User</a>
+                        <div className="dropdown-menu">
+                            <a className="dropdown-item" href="/settings">Settings</a>
+                            <a className="dropdown-item" href="/about">About</a>
+                            <a className="dropdown-item" href="">FAQ</a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="/logout">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                {/* <div className="btn-group">
+                    <button type="button" className="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        User
+                    </button>
+                    <div className="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/settings2">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/about">About</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">FAQ</a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a class="dropdown-item" href="/logout">Logout</a>
+                        </li>
+                    </div>
+                </div> */}
             </div>
         )
     }
@@ -96,9 +128,6 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/urdu">Urdu News</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/settings">Settings</a>
                     </li>
                 </ul>
             </div>
