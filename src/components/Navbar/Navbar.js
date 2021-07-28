@@ -3,16 +3,11 @@ import React from 'react';
 import {useCookies} from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 
-// Importing axios
-import axios from 'axios';
-
 // Importing Navbar CSS File
 import './Navbar.css';
 
+// Importing SearchBar
 import SearchBar from '../Search Bar/SearchBar';
-
-import News from '../News/News';
-
 
 const Navbar = () => {
     // state = {news: []};

@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import { useCookies } from 'react-cookie';
 import axios from 'axios';
 
-const Settings=()=>{
+const Settings = () => {
     const [cookies, setCookie]=useCookies(['GoogleAuth', 'x-access-token']);
     const [data, setData]=useState({"interests":""});
     const [interests, setInterests]=useState();
@@ -18,7 +18,7 @@ const Settings=()=>{
     //     "sports":false
     // }});
 
-    const checkChanged=(e)=>{
+    const checkChanged = (e) => {
         console.log("interests: ", interests);
         console.log("data['interests']", data["interests"]);
         console.log("checkChanged");
@@ -30,14 +30,15 @@ const Settings=()=>{
 
         
     }
-    useEffect(()=>{
+    useEffect( () => {
         document.title = "Settings - Newsly"
-    if(cookies["GoogleAuth"]!==undefined || cookies["x-access-token"]!==undefined){
-        axios.get('http://localhost:5000/account', {headers:{'x-access-token':cookies['x-access-token']}}).then((response)=>{
+    if(cookies["GoogleAuth"]!==undefined || cookies["x-access-token"]!==undefined) {
+        axios.get('http://localhost:5000/account', {headers:{'x-access-token':cookies['x-access-token']}})
+        .then( (response) => {
             setData(response["data"]["user_info"]);
             setInterests(data["interests"]);
             console.log(data);
-        }).catch((err)=>{
+        }).catch( (err) => {
             console.log(err);
         })
         // console.log(data);
@@ -61,11 +62,11 @@ const Settings=()=>{
         // }).catch((err)=>{
         //     console.log(err);
         // })
-        const submitAccount=(e)=>{
+        const submitAccount = (e) => {
             e.preventDefault();
             console.log("Submitted");
         }
-        const submitInterests=(e)=>{
+        const submitInterests = (e) => {
             e.preventDefault();
             console.log("Submitted");
         }
